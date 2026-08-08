@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GolDay favicon">
+  <rect width="64" height="64" rx="16" fill="#0f2a1a"/>
+  <circle cx="32" cy="32" r="24" fill="#ffb13c"/>
+  <path d="M32 16c-4 7-10 14-16 16 6 2 12 9 16 16 4-7 10-14 16-16-6-2-12-9-16-16z" fill="#f4f1e6"/>
+  <circle cx="32" cy="32" r="6" fill="#0f2a1a"/>
+</svg>
