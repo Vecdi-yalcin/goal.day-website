@@ -1217,7 +1217,7 @@
       trophies: TROPHIES_RAW,
       goals: GOALS_RAW
     };
-    // External data loader: prefer serverless API (/api/data) then ./data/public.json fallback.
+    // External data loader: API-only architecture (requires Vercel serverless endpoint).
     (async function(){
       try {
         const res = await fetch('/api/data');
@@ -1230,23 +1230,15 @@
             if (d.clubGoals) FOOTBALL_DB.clubGoals = d.clubGoals;
             if (d.trophies) FOOTBALL_DB.trophies = d.trophies;
             if (d.goals) FOOTBALL_DB.goals = d.goals;
-            console.log('GolDay: loaded external data from /api/data (source='+json.source+')');
+            console.log('GolDay: loaded data from /api/data (source='+json.source+')');
             return;
           }
         }
-      } catch (e) { /* ignore */ }
-      try {
-        const res2 = await fetch('./data/public.json');
-        if (res2.ok) {
-          const d = await res2.json();
-          if (d.players) FOOTBALL_DB.players = d.players;
-          if (d.competitions) FOOTBALL_DB.competitions = d.competitions;
-          if (d.clubGoals) FOOTBALL_DB.clubGoals = d.clubGoals;
-          if (d.trophies) FOOTBALL_DB.trophies = d.trophies;
-          if (d.goals) FOOTBALL_DB.goals = d.goals;
-          console.log('GolDay: loaded external data from ./data/public.json');
-        }
-      } catch (e) { /* ignore */ }
+        throw new Error('Invalid response from /api/data');
+      } catch (err) {
+        console.error('GolDay: Failed to load data from /api/data:', err.message);
+        console.error('GolDay: This application requires Vercel serverless API. GitHub Pages is not supported.');
+      }
     })();
 
     const PLAYERS = FOOTBALL_DB.players;
