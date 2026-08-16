@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="GolDay social preview">
+  <rect width="1200" height="630" rx="36" fill="#0f2a1a"/>
+  <rect x="48" y="48" width="1104" height="534" rx="24" fill="#153a22"/>
+  <text x="96" y="212" fill="#ffb13c" font-family="Arial, sans-serif" font-size="34" letter-spacing="6">GOLDAY</text>
+  <text x="96" y="310" fill="#f4f1e6" font-family="Arial, sans-serif" font-size="70" font-weight="700">Was there a goal</text>
+  <text x="96" y="390" fill="#f4f1e6" font-family="Arial, sans-serif" font-size="70" font-weight="700">on your birthday?</text>
+  <text x="96" y="492" fill="#cfd8c9" font-family="Arial, sans-serif" font-size="28">Football birthday history with Messi, Ronaldo, Mbappé, Haaland and Neymar</text>
+</svg>

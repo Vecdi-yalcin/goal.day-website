@@ -1,0 +1,22 @@
+# Local secrets
+secrets/
+.env
+
+# Node
+node_modules/
+
+# Build
+dist/
+
+# Vercel
+.vercel/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Local backups
+backup/

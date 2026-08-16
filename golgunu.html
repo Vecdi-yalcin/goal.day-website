@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GolDay — Was there a goal on your birthday?</title>
+  <meta name="description" content="Explore football birthday history with GolDay. Discover what happened on your birthday through iconic goals and trophies from Messi, Ronaldo, Mbappé, Haaland and Neymar.">
+  <meta name="keywords" content="football birthday, football history, Messi, Ronaldo, Mbappé, Haaland, Neymar, birthday goals, football trivia">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#0f2a1a">
+  <meta property="og:title" content="GolDay — Was there a goal on your birthday?">
+  <meta property="og:description" content="Discover football history on your birthday with iconic goals and trophies from football’s biggest stars.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./golgunu.html">
+  <meta property="og:image" content="./golgunu-social.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GolDay — Was there a goal on your birthday?">
+  <meta name="twitter:description" content="See what happened on your birthday in football history with Messi, Ronaldo, Mbappé, Haaland and Neymar.">
+  <meta name="twitter:image" content="./golgunu-social.svg">
+  <link rel="canonical" href="./golgunu.html">
+  <link rel="icon" type="image/svg+xml" href="./golgunu-favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --grass-1: #0f2a1a;
+      --grass-2: #153a22;
+      --grass-3: #1c4a2b;
+      --chalk: #f4f1e6;
+      --chalk-dim: #cfd8c9;
+      --ink: #0c1f13;
+      --amber: #ffb13c;
+      --amber-dim: #8a6a2c;
+      --card: #f7f4ea;
+      --surface: #f4f1e6;
+      --messi: #75AADB;
+      --ronaldo: #e8353f;
+      --mbappe: #3b6fd6;
+      --haaland: #ef2b2d;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        repeating-linear-gradient(180deg,
+          var(--grass-2) 0px, var(--grass-2) 64px,
+          var(--grass-1) 64px, var(--grass-1) 128px);
+      color: var(--chalk);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 900px 500px at 50% -10%, rgba(255, 196, 90, .14), transparent 60%),
+        radial-gradient(ellipse 700px 400px at 90% 10%, rgba(255, 196, 90, .08), transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    /* ---------- HERO ---------- */
+    header.hero {
+      text-align: center;
+      padding: 56px 20px 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      letter-spacing: .14em;
+      color: var(--amber);
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border: 1px dashed rgba(255, 177, 60, .5);
+      border-radius: 999px;
+      margin-bottom: 22px;
+    }
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: 14px;
+      font-family: 'Inter', sans-serif;
+      color: var(--chalk);
+    }
+    .lang-switch label {
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--chalk-dim);
+    }
+    .lang-switch select {
+      background: rgba(244, 241, 230, .08);
+      color: var(--ink);
+      border: 1px solid rgba(244, 241, 230, .18);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-family: inherit;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(46px, 9vw, 88px);
+      line-height: .95;
+      letter-spacing: .01em;
+      margin: 0 0 18px;
+      text-shadow: 0 4px 0 rgba(0, 0, 0, .25);
+    }
+
+    h1 .hl {
+      color: var(--amber);
+    }
+
+    .sub {
+      max-width: 560px;
+      margin: 0 auto;
+      color: var(--chalk-dim);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ---------- CONTROLS ---------- */
+    .controls {
+      background: rgba(12, 31, 19, .55);
+      border: 1px solid rgba(244, 241, 230, .12);
+      border-radius: 20px;
+      padding: 26px;
+      margin-top: 34px;
+      backdrop-filter: blur(6px);
+    }
+
+    .picker-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--chalk-dim);
+      margin: 0 0 12px;
+    }
+
+    .player-picker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .chip {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--chalk);
+      background: rgba(244, 241, 230, .06);
+      border: 1.5px solid rgba(244, 241, 230, .18);
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: .15s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .chip:hover {
+      background: rgba(244, 241, 230, .13);
+    }
+
+    .chip.active {
+      background: var(--c, var(--amber));
+      border-color: var(--c, var(--amber));
+      color: #0c1f13;
+    }
+
+    .date-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: flex-end;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--chalk-dim);
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      background: var(--surface);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px 40px 12px 16px;
+      border-radius: 10px;
+      border: none;
+      min-width: 110px;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9'><path d='M1 1l6 6 6-6' stroke='%230c1f13' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+    }
+
+    select:focus-visible,
+    .chip:focus-visible,
+    .find-btn:focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 2px;
+    }
+
+    .find-btn {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: .04em;
+      background: var(--amber);
+      color: #241704;
+      border: none;
+      padding: 13px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform .1s ease;
+      box-shadow: 0 4px 0 var(--amber-dim);
+    }
+
+    .find-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .find-btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 var(--amber-dim);
+    }
+
+    /* ---------- RESULTS ---------- */
+    .results {
+      margin-top: 38px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .results-meta {
+      font-family: 'Space Mono', monospace;
+      font-size: 12.5px;
+      color: var(--chalk-dim);
+      letter-spacing: .04em;
+      margin-bottom: 2px;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 44px 20px;
+      border: 1px dashed rgba(244, 241, 230, .25);
+      border-radius: 16px;
+      color: var(--chalk-dim);
+    }
+
+    .empty-state .big {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 34px;
+      color: var(--chalk);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .nearest-btn {
+      margin-top: 16px;
+      display: inline-block;
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+      color: var(--ink);
+      background: var(--surface);
+      padding: 9px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      border: none;
+    }
+
+    /* ---------- TROPHY BANNER ---------- */
+    .trophy-banner {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(135deg, var(--pc, var(--amber)) 0%, #7a5a12 130%);
+      border-radius: 16px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, .35), inset 0 0 0 1px rgba(255, 255, 255, .15);
+      animation: trophyPop .55s cubic-bezier(.26, 1.4, .4, 1) both;
+    }
+
+    @keyframes trophyPop {
+      0% {
+        opacity: 0;
+        transform: scale(.85) translateY(6px);
+      }
+
+      60% {
+        opacity: 1;
+        transform: scale(1.03) translateY(0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .trophy-icon {
+      font-size: 38px;
+      line-height: 1;
+      filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .35));
+      animation: trophyShine 1.8s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes trophyShine {
+
+      0%,
+      100% {
+        transform: rotate(-6deg) scale(1);
+      }
+
+      50% {
+        transform: rotate(6deg) scale(1.08);
+      }
+    }
+
+    .trophy-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: .02em;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, .35);
+      line-height: 1.1;
+    }
+
+    .trophy-sub {
+      font-family: 'Space Mono', monospace;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, .9);
+      margin-top: 4px;
+    }
+
+    .confetti {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .confetti span {
+      position: absolute;
+      top: -10%;
+      left: calc(var(--i) * 7.2%);
+      width: 7px;
+      height: 12px;
+      background: #fff;
+      opacity: .85;
+      animation: confettiFall 1.8s ease-in calc(var(--i) * 0.07s) 1 both;
+      transform-origin: center;
+    }
+
+    .confetti span:nth-child(3n) {
+      background: #ffe9b0;
+    }
+
+    .confetti span:nth-child(3n+1) {
+      background: #fff;
+    }
+
+    .confetti span:nth-child(3n+2) {
+      background: #0c1f13;
+      opacity: .4;
+    }
+
+    @keyframes confettiFall {
+      0% {
+        transform: translateY(-20px) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(150px) rotate(340deg);
+        opacity: 0;
+      }
+    }
+
+    /* ---------- TICKET CARD ---------- */
+    .ticket {
+      display: flex;
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      color: var(--ink);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, .28);
+      position: relative;
+      animation: rise .35s ease both;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .stub {
+      flex: 0 0 108px;
+      background: var(--pc, var(--amber));
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 14px 6px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    }
+
+    .stub .year {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .stub .flag {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .stub::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -9px;
+      width: 18px;
+      height: 100%;
+      background:
+        radial-gradient(circle 9px at 0 18px, transparent 9px, var(--card) 9.5px) top left/100% 36px repeat-y;
+    }
+
+    .perf {
+      flex: 0 0 0;
+      border-left: 2px dashed rgba(12, 31, 19, .18);
+    }
+
+    .body {
+      flex: 1;
+      padding: 16px 20px 16px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .body .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .opp {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      line-height: 1.05;
+    }
+
+    .meta {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      color: #556455;
+      letter-spacing: .02em;
+    }
+
+    .score {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 15px;
+      background: rgba(12, 31, 19, .07);
+      padding: 4px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .badge {
+      align-self: flex-start;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      color: #fff;
+      background: var(--pc, var(--amber));
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-top: 2px;
+    }
+
+    .who-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11.5px;
+      color: #556455;
+      margin-bottom: 2px;
+    }
+
+    .bottom-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .yt-link {
+      font-family: 'Space Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #c4302b;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 1px solid rgba(196, 48, 43, .35);
+      padding-bottom: 1px;
+    }
+
+    .yt-link:hover {
+      border-bottom-color: #c4302b;
+    }
+
+    /* ---------- STATS STRIP ---------- */
+    .stats-strip {
+      margin-top: 46px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .stat b {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 30px;
+      color: var(--amber);
+    }
+
+    .stat span {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--chalk-dim);
+      letter-spacing: .03em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 20px 50px;
+      color: var(--chalk-dim);
+      font-size: 12.5px;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer a {
+      color: var(--amber);
+    }
+
+    /* ---------- THEME TOGGLE ---------- */
+    .theme-toggle {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 50;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(244, 241, 230, .2);
+      background: rgba(12, 31, 19, .6);
+      color: var(--chalk);
+      font-size: 18px;
+      cursor: pointer;
+      backdrop-filter: blur(6px);
+      transition: transform .15s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.08);
+    }
+
+    [data-theme="light"] {
+      --grass-1: #eef5ee;
+      --grass-2: #e2eee2;
+      --chalk: #152317;
+      --chalk-dim: #4d5f4f;
+    }
+
+    [data-theme="light"] body::before {
+      opacity: .5;
+    }
+
+    [data-theme="light"] .controls,
+    [data-theme="light"] .compare-section,
+    [data-theme="light"] .today-widget {
+      background: rgba(255, 255, 255, .65);
+      border-color: rgba(0, 0, 0, .08);
+    }
+
+    [data-theme="light"] .chip {
+      background: rgba(0, 0, 0, .045);
+      border-color: rgba(0, 0, 0, .14);
+      color: var(--chalk);
+    }
+
+    [data-theme="light"] .chip:hover {
+      background: rgba(0, 0, 0, .09);
+    }
+
+    [data-theme="light"] .eyebrow {
+      border-color: rgba(180, 130, 20, .4);
+    }
+
+    [data-theme="light"] .theme-toggle {
+      background: rgba(255, 255, 255, .7);
+      color: #152317;
+      border-color: rgba(0, 0, 0, .12);
+    }
+
+    [data-theme="light"] select {
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .06);
+    }
+
+    [data-theme="light"] .stats-panel,
+    [data-theme="light"] .compare-card {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    /* ---------- TODAY WIDGET ---------- */
+    .today-widget {
+      margin-top: 28px;
+      background: linear-gradient(120deg, rgba(255, 177, 60, .16), rgba(255, 177, 60, .03));
+      border: 1px solid rgba(255, 177, 60, .3);
+      border-radius: 16px;
+      padding: 16px 20px;
+      display: none;
+    }
+
+    .today-widget.show {
+      display: block;
+    }
+
+    .today-widget .tw-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 6px;
+    }
+
+    .today-widget .tw-line {
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px;
+      color: var(--chalk);
+      line-height: 1.6;
+    }
+
+    .today-widget .tw-line b {
+      color: var(--amber);
+    }
+
+    .today-widget .tw-cta {
+      margin-top: 10px;
+      background: none;
+      border: 1px solid rgba(255, 177, 60, .5);
+      color: var(--amber);
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    /* ---------- DICE + COUNTDOWN ---------- */
+    .dice-btn {
+      font-size: 22px;
+      background: rgba(244, 241, 230, .1);
+      border: 1.5px solid rgba(244, 241, 230, .22);
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 9px 14px;
+      line-height: 1;
+      transition: transform .15s ease;
+    }
+
+    .dice-btn:hover {
+      transform: rotate(-12deg) scale(1.08);
+    }
+
+    .countdown-row {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .countdown-chip {
+      font-family: 'Space Mono', monospace;
+      font-size: 11.5px;
+      color: var(--chalk-dim);
+      background: rgba(244, 241, 230, .06);
+      border: 1px solid rgba(244, 241, 230, .14);
+      padding: 5px 11px;
+      border-radius: 999px;
+    }
+
+    .countdown-chip b {
+      color: var(--amber);
+    }
+
+    /* ---------- RESULT SUMMARY / AI COMMENT / TIMELINE ---------- */
+    .summary-card {
+      background: rgba(244, 241, 230, .07);
+      border: 1px solid rgba(244, 241, 230, .14);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .summary-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      color: var(--chalk);
+      margin-bottom: 8px;
+    }
+
+    .summary-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .summary-pill {
+      font-family: 'Space Mono', monospace;
+      font-size: 12.5px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(244, 241, 230, .09);
+      border: 1px solid rgba(244, 241, 230, .15);
+    }
+
+    .fun-comment {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(244, 241, 230, .18);
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      color: var(--chalk-dim);
+      line-height: 1.6;
+    }
+
+    .legend-callout {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: rgba(255, 177, 60, .08);
+      border-left: 3px solid var(--amber);
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      color: var(--chalk);
+    }
+
+    .legend-callout b {
+      color: var(--amber);
+    }
+
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(244, 241, 230, .18);
+    }
+
+    .timeline-item {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      color: var(--chalk-dim);
+      text-align: center;
+    }
+
+    .timeline-item .ty {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px;
+      color: var(--chalk);
+      margin-bottom: 2px;
+    }
+
+    .timeline-item .tb {
+      font-size: 15px;
+    }
+
+    /* ---------- SHARE ---------- */
+    .share-row {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(244, 241, 230, .12);
+    }
+    .share-row::before {
+      content: 'Share your birthday goal story';
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      color: rgba(244, 241, 230, .7);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .share-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11.5px;
+      color: var(--chalk-dim);
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-right: 2px;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(244, 241, 230, .2);
+      background: rgba(244, 241, 230, .07);
+      color: var(--chalk);
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform .12s ease;
+    }
+
+    .share-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .share-btn.copy {
+      width: auto;
+      border-radius: 999px;
+      padding: 0 14px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11.5px;
+      gap: 6px;
+    }
+
+    /* ---------- COMPARE ---------- */
+    .compare-section {
+      background: rgba(12, 31, 19, .4);
+      border: 1px solid rgba(244, 241, 230, .1);
+      border-radius: 20px;
+      padding: 22px 26px;
+      margin-top: 22px;
+    }
+
+    .compare-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .compare-row select {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .vs-txt {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: var(--amber);
+      flex-shrink: 0;
+    }
+
+    #compareResult {
+      margin-top: 18px;
+    }
+
+    .compare-cards {
+      display: flex;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .compare-card {
+      flex: 1;
+      background: rgba(244, 241, 230, .06);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+      position: relative;
+    }
+
+    .compare-card.winner {
+      box-shadow: 0 0 0 2px var(--amber);
+    }
+
+    .compare-card .cc-flag {
+      font-size: 26px;
+    }
+
+    .compare-card .cc-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      margin-top: 4px;
+    }
+
+    .compare-card .cc-goals {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 40px;
+      color: var(--amber);
+      margin-top: 6px;
+      line-height: 1;
+    }
+
+    .compare-crown {
+      text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      margin-top: 12px;
+      color: var(--amber);
+    }
+
+    .compare-vs-sep {
+      display: flex;
+      align-items: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px;
+      color: var(--chalk-dim);
+    }
+
+    /* ---------- STATS PANEL ---------- */
+    .stats-toggle-wrap {
+      margin-top: 22px;
+      text-align: center;
+    }
+
+    .stats-toggle {
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+      color: var(--chalk);
+      background: rgba(244, 241, 230, .08);
+      border: 1px solid rgba(244, 241, 230, .18);
+      padding: 10px 20px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .stats-panel {
+      display: none;
+      margin-top: 16px;
+      text-align: left;
+      background: rgba(244, 241, 230, .05);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .stats-panel.show {
+      display: block;
+    }
+
+    .stats-panel h4 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: var(--amber);
+      margin: 0 0 6px;
+    }
+
+    .stats-panel .stat-line {
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      color: var(--chalk-dim);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .stats-panel .stat-line strong {
+      color: var(--chalk);
+    }
+
+    @media (max-width:520px) {
+      .stats-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .stub {
+        flex-basis: 84px;
+      }
+
+      .stub .year {
+        font-size: 26px;
+      }
+
+      .body {
+        padding: 14px 14px 14px 20px;
+      }
+
+      .opp {
+        font-size: 20px;
+      }
+
+      .compare-row {
+        flex-direction: column;
+      }
+
+      .vs-txt {
+        transform: rotate(90deg);
+      }
+
+      .compare-cards {
+        flex-direction: column;
+      }
+
+      .theme-toggle {
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-toggle" id="themeToggle" title="Dark/Light mode">🌙</button>
+  <div class="wrap">
+
+    <header class="hero">
+      <div class="eyebrow">⚽ 5-star goals · 2002–2026 · 2100+ highlight moments</div>
+      <div class="lang-switch"><label for="langSelect">Language</label><select id="langSelect" aria-label="Language"><option value="en" selected>English</option><option value="es">Español (LATAM)</option></select></div>
+      <h1>Was there a goal<br><span class="hl">on your birthday?</span></h1>
+      <p class="sub">Explore nearly every club and national team goal from Messi and Ronaldo, plus iconic moments for Mbappé, Haaland and Neymar. Pick your birthday and discover what happened on that day.</p>
+    </header>
+
+    <section class="today-widget" id="todayWidget"></section>
+
+    <section class="controls">
+      <p class="picker-label">Select players</p>
+      <div class="player-picker" id="playerPicker">
+        <button class="chip active" data-player="all">🌍 All players</button>
+        <button class="chip" data-player="messi" style="--c:#75AADB">🇦🇷 Messi</button>
+        <button class="chip" data-player="ronaldo" style="--c:#e8353f">🇵🇹 Ronaldo</button>
+        <button class="chip" data-player="mbappe" style="--c:#3b6fd6">🇫🇷 Mbappé</button>
+        <button class="chip" data-player="haaland" style="--c:#ef2b2d">🇳🇴 Haaland</button>
+        <button class="chip" data-player="neymar" style="--c:#f7d117">🇧🇷 Neymar</button>
+      </div>
+
+      <p class="picker-label">Birthday</p>
+      <div class="date-row">
+        <div class="field">
+          <label for="daySelect">Day</label>
+          <select id="daySelect"></select>
+        </div>
+        <div class="field">
+          <label for="monthSelect">Month</label>
+          <select id="monthSelect">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <button class="find-btn" id="findBtn">FIND THE GOAL</button>
+        <button class="dice-btn" id="diceBtn" title="Random date">🎲</button>
+      </div>
+      <div class="countdown-row" id="countdownRow"></div>
+    </section>
+
+    <section class="results" id="results"></section>
+
+    <section class="compare-section">
+      <p class="picker-label">🆚 Compare two stars (same date)</p>
+      <div class="compare-row">
+        <select id="cmpA"></select>
+        <span class="vs-txt">VS</span>
+        <select id="cmpB"></select>
+      </div>
+      <div id="compareResult"></div>
+    </section>
+
+    <section class="stats-toggle-wrap">
+      <button class="stats-toggle" id="statsToggle">📈 Interesting stats</button>
+      <div id="statsPanel" class="stats-panel"></div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="stat"><b id="c-messi">0</b><span>Messi matches</span></div>
+      <div class="stat"><b id="c-ronaldo">0</b><span>Ronaldo matches</span></div>
+      <div class="stat"><b id="c-mbappe">0</b><span>Mbappé matches</span></div>
+      <div class="stat"><b id="c-haaland">0</b><span>Haaland matches</span></div>
+      <div class="stat"><b id="c-neymar">0</b><span>Neymar matches</span></div>
+    </section>
+
+    <footer>
+      Curated football birthday highlights featuring iconic goals and trophies from Messi, Ronaldo, Mbappé, Haaland and Neymar.<br>
+      <strong>Created by Vecdi Yalcin</strong>
+    </footer>
+
+  </div>
+
+  <script>
+    /* ================== DATA ================== */
+    const PLAYERS_RAW = {};,
+      ronaldo: { name: 'Cristiano Ronaldo', team: 'Portugal', flag: '🇵🇹', color: '#e8353f', bday: '02-05' },
+      mbappe: { name: 'Kylian Mbappé', team: 'France', flag: '🇫🇷', color: '#3b6fd6', bday: '12-20' },
+      haaland: { name: 'Erling Haaland', team: 'Norway', flag: '🇳🇴', color: '#ef2b2d', bday: '07-21' },
+      neymar: { name: 'Neymar Jr.', team: 'Brazil', flag: '🇧🇷', color: '#f7d117', bday: '02-05' }
+    };
+
+    const COMP_RAW = {};;
+
+    // CLUB GOALS — legendary/milestone goals (not full club career; verified highlights)
+    // [date, opponent, code, score, goalCount, club]
+    const CLUB_GOALS_RAW = {};;
+
+    // TROPHIES — [date, cup name, team]
+    const TROPHIES_RAW = {};;
+
+    // [date(YYYY-MM-DD), opponent, code, score, goalCount]
+    const GOALS_RAW = {};;
+
+    const FOOTBALL_DB = {
+      meta: {
+        name: 'GolDay football history dataset',
+        note: 'The app keeps the data grouped in a database-like structure so future edits stay focused on the dataset.',
+        version: '2026-08-08'
+      },
+      schema: {
+        players: ['name', 'team', 'flag', 'color', 'bday'],
+        competitions: ['code', 'label'],
+        clubGoals: ['date', 'opponent', 'competition', 'score', 'goals', 'club'],
+        trophies: ['date', 'name', 'team'],
+        goals: ['date', 'opponent', 'competition', 'score', 'goals']
+      },
+      players: PLAYERS_RAW,
+      competitions: COMP_RAW,
+      clubGoals: CLUB_GOALS_RAW,
+      trophies: TROPHIES_RAW,
+      goals: GOALS_RAW
+    };
+    // External data loader: prefer serverless API (/api/data) then ./data/public.json fallback.
+    (async function(){
+      try {
+        const res = await fetch('/api/data');
+        if (res.ok) {
+          const json = await res.json();
+          if (json && json.ok && json.data) {
+            const d = json.data;
+            if (d.players) FOOTBALL_DB.players = d.players;
+            if (d.competitions) FOOTBALL_DB.competitions = d.competitions;
+            if (d.clubGoals) FOOTBALL_DB.clubGoals = d.clubGoals;
+            if (d.trophies) FOOTBALL_DB.trophies = d.trophies;
+            if (d.goals) FOOTBALL_DB.goals = d.goals;
+            console.log('GolDay: loaded external data from /api/data (source='+json.source+')');
+            return;
+          }
+        }
+      } catch (e) { /* ignore */ }
+      try {
+        const res2 = await fetch('./data/public.json');
+        if (res2.ok) {
+          const d = await res2.json();
+          if (d.players) FOOTBALL_DB.players = d.players;
+          if (d.competitions) FOOTBALL_DB.competitions = d.competitions;
+          if (d.clubGoals) FOOTBALL_DB.clubGoals = d.clubGoals;
+          if (d.trophies) FOOTBALL_DB.trophies = d.trophies;
+          if (d.goals) FOOTBALL_DB.goals = d.goals;
+          console.log('GolDay: loaded external data from ./data/public.json');
+        }
+      } catch (e) { /* ignore */ }
+    })();
+
+    const PLAYERS = FOOTBALL_DB.players;
+    const COMP = FOOTBALL_DB.competitions;
+    const CLUB_GOALS = FOOTBALL_DB.clubGoals;
+    const TROPHIES = FOOTBALL_DB.trophies;
+    const GOALS = FOOTBALL_DB.goals;
+
+    /* ================== HELPER FUNCTIONS ================== */
+    const MONTHS = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const LOCALE = {
+      en: {
+        months: ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        labels: {
+          playerPicker: 'Select players',
+          allPlayers: 'All players',
+          birthday: 'Birthday',
+          day: 'Day',
+          month: 'Month',
+          findBtn: 'FIND THE GOAL',
+          randomDate: 'Random date',
+          compare: '🆚 Compare two stars (same date)',
+          statsToggle: '📈 Interesting stats',
+          share: 'Share',
+          copyLink: 'Copy link',
+          copied: '✓ Copied!',
+          copyError: '✗ Copy failed',
+          youtubeSearch: 'Search on YouTube',
+          nearest: 'Go to that date ➔',
+          todayInHistory: '📅 Today in history —',
+          legendCallout: '🌟 Most memorable moment on this date — {player}: {forSide} {score} {opp} ({year}, {competition})',
+          details: 'See details ➔',
+          noMatchesAll: 'No goals from the five stars on that date.',
+          noMatchesPlayer: '{player} had no goals on that date.',
+          todayLineQuiet: 'Today is quiet in football history... maybe your birthday is luckier?',
+          todayLineFound: 'Today in history ({date}), these stars {items}! 🔥',
+          goalHintHat: 'scored a hat-trick 🎩',
+          goalHintBrace: 'scored a brace ⚽⚽',
+          goalHintOne: 'scored a goal ⚽',
+          before: 'before',
+          later: 'later',
+          quietDay: 'A quiet day in football history ⚽💤',
+          searchX: 'Share on X',
+          searchFB: 'Share on Facebook',
+          searchWA: 'Share on WhatsApp',
+          insta: 'Instagram Story',
+          tiktok: 'TikTok share',
+          todayChip: 'birthday',
+          todayTextSuffix: 'day',
+          vsy: 'VS',
+          draw: '🤝 Draw!',
+          winnerPrefix: '👑 Winner: ',
+          noGoalsThisDate: 'No goals found on this date.',
+        }
+      },
+      es: {
+        months: ['', 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
+        labels: {
+          playerPicker: 'Selecciona jugadores',
+          allPlayers: 'Todos los jugadores',
+          birthday: 'Cumpleaños',
+          day: 'Día',
+          month: 'Mes',
+          findBtn: 'ENCONTRAR GOL',
+          randomDate: 'Fecha aleatoria',
+          compare: '🆚 Compara dos estrellas (misma fecha)',
+          statsToggle: '📈 Estadísticas interesantes',
+          share: 'Compartir',
+          copyLink: 'Copiar enlace',
+          copied: '✓ ¡Copiado!',
+          copyError: '✗ Error al copiar',
+          youtubeSearch: 'Buscar en YouTube',
+          nearest: 'Ir a esa fecha ➔',
+          todayInHistory: '📅 Tal día como hoy —',
+          legendCallout: '🌟 El momento más memorable de esta fecha — {player}: {forSide} {score} {opp} ({year}, {competition})',
+          details: 'Ver detalles ➔',
+          noMatchesAll: 'No hubo goles de las cinco estrellas en esa fecha.',
+          noMatchesPlayer: '{player} no anotó en esa fecha.',
+          todayLineQuiet: 'Hoy es un día tranquilo en la historia del fútbol... ¿quizás tu cumpleaños es más afortunado?',
+          todayLineFound: 'Tal día como hoy ({date}), estas estrellas {items}! 🔥',
+          goalHintHat: 'anotó un hat-trick 🎩',
+          goalHintBrace: 'anotó un brace ⚽⚽',
+          goalHintOne: 'anotó un gol ⚽',
+          before: 'antes',
+          later: 'después',
+          quietDay: 'Un día tranquilo en la historia del fútbol ⚽💤',
+          searchX: 'Compartir en X',
+          searchFB: 'Compartir en Facebook',
+          searchWA: 'Compartir en WhatsApp',
+          insta: 'Historia de Instagram',
+          tiktok: 'Compartir en TikTok',
+          todayChip: 'cumpleaños',
+          todayTextSuffix: 'días',
+          vsy: 'VS',
+          draw: '🤝 Empate!',
+          winnerPrefix: '👑 Ganador: ',
+          noGoalsThisDate: 'No se encontraron goles en esta fecha.',
+        }
+      }
+    };
+    let currentLang = 'en';
+    function formatDate(iso) {
+      const [y, m, d] = iso.split('-').map(Number);
+      return `${d} ${LOCALE[currentLang].months[m]} ${y}`;
+    }
+    function translateUI() {
+      const labels = LOCALE[currentLang].labels;
+      const playerLabel = document.querySelector('.picker-label:nth-of-type(1)');
+      if (playerLabel) playerLabel.textContent = labels.playerPicker;
+      const allBtn = document.querySelector('.chip[data-player="all"]');
+      if (allBtn) allBtn.textContent = labels.allPlayers;
+      const birthdayLabel = document.querySelector('.picker-label:nth-of-type(2)');
+      if (birthdayLabel) birthdayLabel.textContent = labels.birthday;
+      const dayLabel = document.querySelector('label[for="daySelect"]');
+      if (dayLabel) dayLabel.textContent = labels.day;
+      const monthLabel = document.querySelector('label[for="monthSelect"]');
+      if (monthLabel) monthLabel.textContent = labels.month;
+      const findBtn = document.getElementById('findBtn');
+      if (findBtn) findBtn.textContent = labels.findBtn;
+      const diceBtn = document.getElementById('diceBtn');
+      if (diceBtn) diceBtn.title = labels.randomDate;
+      const compareLabel = document.querySelector('.compare-section .picker-label');
+      if (compareLabel) compareLabel.textContent = labels.compare;
+      const statsToggle = document.getElementById('statsToggle');
+      if (statsToggle) statsToggle.textContent = labels.statsToggle;
+      document.querySelectorAll('#monthSelect option').forEach((opt, idx) => {
+        if (idx > 0) opt.textContent = LOCALE[currentLang].months[idx];
+      });
+      const shareLabels = document.querySelectorAll('.share-label');
+      shareLabels.forEach(el => el.textContent = labels.share);
+      document.querySelectorAll('.share-btn.copy').forEach(btn => btn.textContent = labels.copyLink);
+      const todayLabel = document.querySelector('.today-widget .tw-label');
+      if (todayLabel) {
+        const parts = todayLabel.textContent.split('—');
+        todayLabel.textContent = `${labels.todayInHistory} ${parts[1] ? parts[1].trim() : ''}`.trim();
+      }
+      const detailsBtn = document.getElementById('twCta');
+      if (detailsBtn) detailsBtn.textContent = labels.details;
+    }
+    function setLanguage(lang) {
+      if (!LOCALE[lang]) return;
+      currentLang = lang;
+      translateUI();
+      renderResults(curDay, curMonth);
+      renderCompare(curDay, curMonth);
+      renderTodayWidget();
+      renderCountdowns();
+    }
+    const daysInMonth = m => [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][m - 1];
+
+    function fillDaySelect(month) {
+      const sel = document.getElementById('daySelect');
+      const prev = sel.value;
+      const max = daysInMonth(parseInt(month, 10));
+      sel.innerHTML = '';
+      for (let d = 1; d <= max; d++) {
+        const opt = document.createElement('option');
+        opt.value = d; opt.textContent = d;
+        sel.appendChild(opt);
+      }
+      if (prev && prev <= max) sel.value = prev;
+    }
+
+    let currentPlayer = 'all';
+
+    function activePlayers() {
+      return currentPlayer === 'all' ? Object.keys(PLAYERS) : [currentPlayer];
+    }
+
+    function calendarDiff(day1, month1, day2, month2) {
+      // day1/month1 -> day2/month2 distance in forward direction (wrap-safe, leap-year-safe reference)
+      const d1 = new Date(2024, month1 - 1, day1);
+      const d2 = new Date(2024, month2 - 1, day2);
+      let diff = Math.round((d2 - d1) / 86400000);
+      if (diff < 0) diff += 366;
+      return diff;
+    }
+
+    function entriesFor(day, month, playersList) {
+      const players = playersList || activePlayers();
+      const mm = String(month).padStart(2, '0');
+      const dd = String(day).padStart(2, '0');
+      const marker = `-${mm}-${dd}`;
+      let out = [];
+      players.forEach(p => {
+        GOALS[p].forEach(e => {
+          if (e[0].slice(4) === marker) out.push({ player: p, entry: e, kind: 'mt' });
+        });
+        (CLUB_GOALS[p] || []).forEach(e => {
+          if (e[0].slice(4) === marker) out.push({ player: p, entry: e, kind: 'club' });
+        });
+      });
+      out.sort((a, b) => b.entry[0].localeCompare(a.entry[0]));
+      return out;
+    }
+
+    function nearestEntry(day, month, playersList) {
+      // finds the closest goal with the same day-month, including direction info (before/after)
+      const players = playersList || activePlayers();
+      let best = null, bestDist = Infinity, bestDir = 1;
+      players.forEach(p => {
+        const all = [...GOALS[p].map(e => ({ e, kind: 'mt' })), ...(CLUB_GOALS[p] || []).map(e => ({ e, kind: 'club' }))];
+        all.forEach(({ e, kind }) => {
+          const [y, m, d] = e[0].split('-').map(Number);
+          const fwd = calendarDiff(day, month, d, m);
+          const bwd = 366 - fwd;
+          const dist = Math.min(fwd, bwd);
+          const dir = fwd <= bwd ? 1 : -1;
+          if (dist < bestDist) { bestDist = dist; best = { player: p, entry: e, kind }; bestDir = dir; }
+        });
+      });
+      if (best) { best.dist = bestDist; best.dir = bestDir; }
+      return best;
+    }
+
+    function youtubeSearchUrl(player, entry, kind) {
+      const [date, opp] = entry;
+      const P = PLAYERS[player];
+      const forSide = kind === 'club' ? entry[5] : P.team;
+      const [y, m, d] = date.split('-').map(Number);
+      const monthsEN = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      const q = `${forSide} vs ${opp} ${monthsEN[m]} ${d} ${y} ${P.name} goal`;
+      return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
+    }
+
+    function trophiesFor(day, month, playersList) {
+      const players = playersList || activePlayers();
+      const mm = String(month).padStart(2, '0');
+      const dd = String(day).padStart(2, '0');
+      const marker = `-${mm}-${dd}`;
+      let out = [];
+      players.forEach(p => {
+        (TROPHIES[p] || []).forEach(t => {
+          if (t[0].slice(4) === marker) out.push({ player: p, trophy: t });
+        });
+      });
+      out.sort((a, b) => a.trophy[0].localeCompare(b.trophy[0]));
+      return out;
+    }
+
+    function renderTrophyBanner({ player, trophy }) {
+      const [date, name, team] = trophy;
+      const year = date.slice(0, 4);
+      const P = PLAYERS[player];
+      return `
+  <div class="trophy-banner" style="--pc:${P.color}">
+    <div class="confetti">${Array.from({ length: 14 }).map((_, i) => `<span style="--i:${i}"></span>`).join('')}</div>
+    <div class="trophy-icon">🏆</div>
+    <div class="trophy-text">
+      <div class="trophy-title">${P.flag} ${P.name} won on this date!</div>
+      <div class="trophy-sub">${year} · <strong>${name}</strong> · ${team}</div>
+    </div>
+  </div>`;
+    }
+
+    function badgeFor(goals) {
+      if (goals >= 5) return `${goals} GOALS 🔥`;
+      if (goals === 4) return '4 GOALS';
+      if (goals >= 3) return 'HAT-TRICK 🎩';
+      if (goals === 2) return 'BRACE ⚽⚽';
+      return null;
+    }
+
+    function renderTicket({ player, entry, kind }, opts = {}) {
+      const [date, opp, code, score, goals, club] = entry;
+      const year = date.slice(0, 4);
+      const P = PLAYERS[player];
+      const forSide = kind === 'club' ? club : P.team;
+      const badge = badgeFor(goals);
+      const kindTag = kind === 'club' ? `🏟️ Club goal` : `🌐 National team goal`;
+      const whoTag = opts.showWho ? `<div class="who-tag">${P.flag} ${P.name} · ${kindTag}</div>` : `<div class="who-tag">${kindTag}</div>`;
+      const yt = youtubeSearchUrl(player, entry, kind);
+      return `
+  <div class="ticket">
+    <div class="stub" style="--pc:${P.color}">
+      <div class="flag">${P.flag}</div>
+      <div class="year">${year}</div>
+    </div>
+    <div class="perf"></div>
+    <div class="body">
+      ${whoTag}
+      <div class="top-row">
+        <div>
+          <div class="opp">${forSide} ${score.split('–')[0] > score.split('–')[1] ? '▲' : (score.split('–')[0] < score.split('–')[1] ? '▼' : '=')} ${opp}</div>
+          <div class="meta">${COMP[code] || code} · ${formatDate(date)}</div>
+        </div>
+        <div class="score">${score}</div>
+      </div>
+      <div class="bottom-row">
+        ${badge ? `<span class="badge" style="--pc:${P.color}">${badge}</span>` : '<span></span>'}
+        <a class="yt-link" href="${yt}" target="_blank" rel="noopener">▶ Search on YouTube</a>
+      </div>
+    </div>
+  </div>`;
+    }
+
+    function formatDate(iso) {
+      const [y, m, d] = iso.split('-').map(Number);
+      return `${d} ${LOCALE[currentLang].months[m]} ${y}`;
+    }
+
+    function totalGoalsIn(found) {
+      return found.reduce((a, f) => a + f.entry[4], 0);
+    }
+
+    function goalsCountFor(player, day, month) {
+      const marker = `-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      let total = 0;
+      GOALS[player].forEach(e => { if (e[0].slice(4) === marker) total += e[4]; });
+      (CLUB_GOALS[player] || []).forEach(e => { if (e[0].slice(4) === marker) total += e[4]; });
+      return total;
+    }
+
+    const FUN_TEMPLATES = {
+      en: {
+        low: [
+          n => `Just ${n} goals, but it's the story that counts! ⚽`,
+          n => `${n} goals — a modest but memorable birthday stat.`,
+          n => `${n} goal${n === 1 ? '' : 's'} — a quiet but notable day.`
+        ],
+        mid: [
+          n => `${n} goals! Your birthday was a good day for football. 😄`,
+          n => `${n} goals — looks like your birthday brought the luck. 😄`,
+          n => `${n} goals! The stars were shining on that date.`
+        ],
+        high: [
+          n => `${n} goals! That birthday date was a real goal festival. 🔥`,
+          n => `${n} goals! The football gods were on the pitch that day. ⚡`,
+          n => `${n} goals — your birthday almost wrote history. 🐐`,
+          n => `${n} goals! A birthday stat sweeter than cake. 🎂⚽`
+        ]
+      },
+      es: {
+        low: [
+          n => `Solo ${n} goles, pero la historia importa más. ⚽`,
+          n => `${n} goles — un cumpleaños tranquilo pero memorable.`,
+          n => `${n} gol${n === 1 ? '' : 'es'} — un día discreto pero digno.`
+        ],
+        mid: [
+          n => `${n} goles! Tu cumpleaños fue un gran día para el fútbol. 😄`,
+          n => `${n} goles — parece que tu cumpleaños trajo suerte. 😄`,
+          n => `${n} goles! Las estrellas brillaron en esa fecha.`
+        ],
+        high: [
+          n => `${n} goles! Esa fecha fue un verdadero festival de goles. 🔥`,
+          n => `${n} goles! Los dioses del fútbol estaban en el campo ese día. ⚡`,
+          n => `${n} goles — tu cumpleaños casi hizo historia. 🐐`,
+          n => `${n} goles! Una estadística de cumpleaños más dulce que el pastel. 🎂⚽`
+        ]
+      }
+    };
+    function generateFunComment(found) {
+      const n = totalGoalsIn(found);
+      if (n === 0) return null;
+      const tier = n >= 5 ? 'high' : n >= 2 ? 'mid' : 'low';
+      const arr = FUN_TEMPLATES[currentLang] || FUN_TEMPLATES.en;
+      const tmpl = arr[tier][Math.floor(Math.random() * arr[tier].length)];
+      return tmpl(n);
+    }
+
+    function pickLegendary(found) {
+      if (found.length === 0) return null;
+      const finals = found.filter(f => f.entry[2].endsWith('F'));
+      const candidate = finals.length
+        ? finals.sort((a, b) => b.entry[4] - a.entry[4])[0]
+        : [...found].sort((a, b) => b.entry[4] - a.entry[4])[0];
+      const isNotable = candidate.entry[2].endsWith('F') || candidate.entry[4] >= 3;
+      return isNotable ? candidate : null;
+    }
+
+    function renderLegendCallout(found) {
+      const leg = pickLegendary(found);
+      if (!leg) return '';
+      const [date, opp, code, score, goals, club] = leg.entry;
+      const P = PLAYERS[leg.player];
+      const forSide = leg.kind === 'club' ? club : P.team;
+      const year = date.slice(0, 4);
+      const label = LOCALE[currentLang].labels;
+      const competition = COMP[code] || code;
+      return `<div class="legend-callout">${label.legendCallout.replace('{player}', P.name).replace('{forSide}', forSide).replace('{score}', score).replace('{opp}', opp).replace('{year}', year).replace('{competition}', competition)}</div>`;
+    }
+
+    function renderTimeline(found) {
+      if (currentPlayer === 'all' || found.length < 2) return '';
+      const byYear = {};
+      found.forEach(f => {
+        const y = f.entry[0].slice(0, 4);
+        byYear[y] = (byYear[y] || 0) + f.entry[4];
+      });
+      const years = Object.keys(byYear).sort();
+      if (years.length < 2) return '';
+      const items = years.map(y => `<div class="timeline-item"><span class="ty">${y}</span><span class="tb">${'⚽'.repeat(Math.min(byYear[y], 6))}${byYear[y] > 6 ? '+' : ''}</span></div>`).join('');
+      return `<div class="timeline">${items}</div>`;
+    }
+
+    function buildShareText(day, month, found) {
+      const total = totalGoalsIn(found);
+      const dateStr = `${day} ${LOCALE[currentLang].months[month]}`;
+      const P = currentPlayer !== 'all' ? PLAYERS[currentPlayer] : null;
+      if (currentPlayer !== 'all') {
+        if (currentLang === 'es') {
+          if (total === 0) return `${P.flag} ${P.name} no anotó el ${dateStr} 😅 ¿Qué pasó en tu cumpleaños?`;
+          return `🎉 ${P.name} anotó ${total} goles el ${dateStr}! ⚽ ¿Qué pasó en tu cumpleaños?`;
+        }
+        if (total === 0) return `${P.flag} ${P.name} did not score on ${dateStr} 😅 See what happened on your birthday:`;
+        return `🎉 ${P.name} scored ${total} goals on ${dateStr}! ⚽ See what happened on your birthday:`;
+      }
+      if (currentLang === 'es') {
+        if (total === 0) return `El ${dateStr} ninguna de las cinco estrellas anotó 😅 ¿Y en tu cumpleaños?`;
+        return `🎉 El ${dateStr} las estrellas del fútbol anotaron ${total} goles en total! ¿Qué pasó en tu cumpleaños?`;
+      }
+      if (total === 0) return `No five-star goals happened on ${dateStr} 😅 What about your birthday?`;
+      return `🎉 Football stars scored ${total} goals on ${dateStr}! See what happened on your birthday:`;
+    }
+
+    function renderShareRow(day, month, found) {
+      const text = buildShareText(day, month, found);
+      const url = location.href.split('#')[0].split('?')[0];
+      return `
+  <div class="share-row">
+    <span class="share-label">Share</span>
+    <a class="share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}" title="Share on X">𝕏</a>
+    <a class="share-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" title="Share on Facebook">f</a>
+    <a class="share-btn" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}" title="Share on WhatsApp">💬</a>
+    <a class="share-btn" target="_blank" rel="noopener" href="https://www.instagram.com/" title="Instagram Story">📸</a>
+    <a class="share-btn" target="_blank" rel="noopener" href="https://www.tiktok.com/upload" title="TikTok share">🎵</a>
+    <button class="share-btn copy" id="copyLinkBtn" data-text="${text.replace(/"/g, '&quot;')}" data-url="${url}">🔗 Copy link</button>
+  </div>`;
+    }
+
+    function attachCopyListener() {
+      const btn = document.getElementById('copyLinkBtn');
+      if (!btn) return;
+      btn.addEventListener('click', async () => {
+        const full = btn.dataset.text + ' ' + btn.dataset.url;
+        const old = btn.textContent;
+        try {
+          await navigator.clipboard.writeText(full);
+          btn.textContent = LOCALE[currentLang].labels.copied;
+        } catch (e) {
+          btn.textContent = LOCALE[currentLang].labels.copyError;
+        }
+        setTimeout(() => { btn.textContent = old; }, 1800);
+      });
+    }
+
+    function renderSummary(day, month, found) {
+      const dateStr = `${day} ${LOCALE[currentLang].months[month]}`;
+      let title, grid = '';
+      const label = LOCALE[currentLang].labels;
+      if (currentPlayer !== 'all') {
+        const P = PLAYERS[currentPlayer];
+        const n = totalGoalsIn(found);
+        title = n > 0 ? `🎉 ${P.name} scored ${n} goals on your birthday!` : `😅 ${P.name} did not score on this date`;
+      } else {
+        title = `What happened on ${dateStr}?`;
+        const byPlayer = {};
+        found.forEach(f => { byPlayer[f.player] = (byPlayer[f.player] || 0) + f.entry[4]; });
+        grid = `<div class="summary-grid">` + Object.keys(PLAYERS).map(p => {
+          const n = byPlayer[p] || 0;
+          return `<span class="summary-pill">${PLAYERS[p].flag} ${PLAYERS[p].name.split(' ')[0]}: <strong>${n}</strong> gol</span>`;
+        }).join('') + `</div>`;
+      }
+      const timeline = renderTimeline(found);
+      const legend = renderLegendCallout(found);
+      const comment = generateFunComment(found);
+      return `<div class="summary-card">
+    <div class="summary-title">${title}</div>
+    ${grid}
+    ${timeline}
+    ${legend}
+    ${comment ? `<div class="fun-comment">💭 ${comment}</div>` : ''}
+  </div>`;
+    }
+
+    let curDay = 24, curMonth = 6;
+
+    function renderResults(day, month) {
+      curDay = day; curMonth = month;
+      const results = document.getElementById('results');
+      const found = entriesFor(day, month);
+      const trophies = trophiesFor(day, month);
+      const showWho = currentPlayer === 'all';
+      const trophyHtml = trophies.map(renderTrophyBanner).join('');
+
+      if (found.length === 0) {
+        const near = nearestEntry(day, month);
+        let nearHtml = '';
+        if (near) {
+          const [ny, nm, nd] = near.entry[0].split('-');
+          const nd_i = parseInt(nd, 10), nm_i = parseInt(nm, 10);
+          const goals = near.entry[4];
+          const hint = goals >= 3 ? LOCALE[currentLang].labels.goalHintHat : goals === 2 ? LOCALE[currentLang].labels.goalHintBrace : LOCALE[currentLang].labels.goalHintOne;
+          const dirWord = near.dir > 0 ? LOCALE[currentLang].labels.later : LOCALE[currentLang].labels.before;
+          nearHtml = `
+        <div class="fun-comment" style="margin-top:14px;border-top:none;padding-top:0;">But <strong>${near.dist}</strong> days ${dirWord} (${nd_i} ${LOCALE[currentLang].months[nm_i]}) ${PLAYERS[near.player].flag} ${PLAYERS[near.player].name} ${hint} 👀</div>
+        <button class="nearest-btn" id="nearestBtn" data-day="${nd_i}" data-month="${nm_i}">${LOCALE[currentLang].labels.nearest}</button>`;
+        }
+        results.innerHTML = trophyHtml + `
+      <div class="empty-state">
+          <span class="big">${LOCALE[currentLang].labels.quietDay}</span>
+          ${currentPlayer === 'all' ? LOCALE[currentLang].labels.noMatchesAll : LOCALE[currentLang].labels.noMatchesPlayer.replace('{player}', PLAYERS[currentPlayer].name)}
+        ${nearHtml}
+      </div>
+      ${renderShareRow(day, month, found)}`;
+        const btn = document.getElementById('nearestBtn');
+        if (btn) {
+          btn.addEventListener('click', () => {
+            const d = parseInt(btn.dataset.day, 10), m = parseInt(btn.dataset.month, 10);
+            document.getElementById('monthSelect').value = m;
+            fillDaySelect(m);
+            document.getElementById('daySelect').value = d;
+            renderResults(d, m);
+          });
+        }
+        attachCopyListener();
+        renderCompare(curDay, curMonth);
+        return;
+      }
+
+      const metaLine = `<div class="results-meta">${found.length} matches found · ${formatDate(`0000-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`).replace('0000 ', '')}</div>`;
+      const summaryHtml = renderSummary(day, month, found);
+      results.innerHTML = trophyHtml + summaryHtml + metaLine + found.map(f => renderTicket(f, { showWho })).join('') + renderShareRow(day, month, found);
+      attachCopyListener();
+      renderCompare(curDay, curMonth);
+    }
+
+    /* ================== COMPARISON ================== */
+    function initCompareSelects() {
+      const opts = Object.keys(PLAYERS).map(p => `<option value="${p}">${PLAYERS[p].flag} ${PLAYERS[p].name}</option>`).join('');
+      document.getElementById('cmpA').innerHTML = opts;
+      document.getElementById('cmpB').innerHTML = opts;
+      document.getElementById('cmpA').value = 'messi';
+      document.getElementById('cmpB').value = 'ronaldo';
+    }
+
+    function renderCompare(day, month) {
+      const a = document.getElementById('cmpA').value;
+      const b = document.getElementById('cmpB').value;
+      const Pa = PLAYERS[a], Pb = PLAYERS[b];
+      const ga = goalsCountFor(a, day, month);
+      const gb = goalsCountFor(b, day, month);
+      const dateStr = `${day} ${LOCALE[currentLang].months[month]}`;
+      let crown;
+      if (ga === 0 && gb === 0) crown = '😅 Neither scored on this date';
+      else if (ga > gb) crown = `${LOCALE[currentLang].labels.winnerPrefix}${Pa.name}`;
+      else if (gb > ga) crown = `${LOCALE[currentLang].labels.winnerPrefix}${Pb.name}`;
+      else crown = LOCALE[currentLang].labels.draw;
+      document.getElementById('compareResult').innerHTML = `
+    <div class="compare-cards">
+      <div class="compare-card ${ga > gb ? 'winner' : ''}" style="--pc:${Pa.color}">
+        <div class="cc-flag">${Pa.flag}</div>
+        <div class="cc-name">${Pa.name}</div>
+        <div class="cc-goals">${ga}</div>
+      </div>
+      <div class="compare-vs-sep">VS</div>
+      <div class="compare-card ${gb > ga ? 'winner' : ''}" style="--pc:${Pb.color}">
+        <div class="cc-flag">${Pb.flag}</div>
+        <div class="cc-name">${Pb.name}</div>
+        <div class="cc-goals">${gb}</div>
+      </div>
+    </div>
+    <div class="compare-crown">${dateStr} · ${crown}</div>`;
+    }
+
+    /* ================== TODAY HISTORYTE ================== */
+    function renderTodayWidget() {
+      const today = new Date();
+      const day = today.getDate(), month = today.getMonth() + 1;
+      const allP = Object.keys(PLAYERS);
+      const found = entriesFor(day, month, allP);
+      const trophies = trophiesFor(day, month, allP);
+      const widget = document.getElementById('todayWidget');
+      const dateLabel = `${day} ${LOCALE[currentLang].months[month]}`;
+      let line;
+      if (found.length === 0 && trophies.length === 0) {
+        line = LOCALE[currentLang].labels.todayLineQuiet;
+      } else {
+        const totalGoals = totalGoalsIn(found);
+        const parts = [];
+        if (totalGoals > 0) parts.push(`<b>${totalGoals} goals</b>`);
+        if (trophies.length > 0) parts.push(`<b>${trophies.length} trophies</b>`);
+        line = `${LOCALE[currentLang].labels.todayLineFound.replace('{date}', dateLabel).replace('{items}', parts.join(' and '))}`;
+      }
+      widget.innerHTML = `
+    <div class="tw-label">${LOCALE[currentLang].labels.todayInHistory} ${dateLabel}</div>
+    <div class="tw-line">${line}</div>
+    <button class="tw-cta" id="twCta">${LOCALE[currentLang].labels.details}</button>`;
+      widget.classList.add('show');
+      document.getElementById('twCta').addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        document.querySelector('.chip[data-player="all"]').classList.add('active');
+        currentPlayer = 'all';
+        document.getElementById('monthSelect').value = month;
+        fillDaySelect(month);
+        document.getElementById('daySelect').value = day;
+        renderResults(day, month);
+        const _r = document.getElementById('results'); if (_r && _r.scrollIntoView) _r.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    /* ================== BACK SAYIM ================== */
+    function daysUntilBirthday(mmdd) {
+      const today = new Date();
+      const day = today.getDate(), month = today.getMonth() + 1;
+      const [bm, bd] = mmdd.split('-').map(Number);
+      return calendarDiff(day, month, bd, bm);
+    }
+    function renderCountdowns() {
+      const row = document.getElementById('countdownRow');
+      row.innerHTML = Object.keys(PLAYERS).map(p => {
+        const P = PLAYERS[p];
+        const days = daysUntilBirthday(P.bday);
+        const txt = days === 0 ? (currentLang === 'es' ? '¡HOY! 🎂' : 'TODAY! 🎂') : `${days} ${currentLang === 'es' ? 'days' : 'days'}`;
+        return `<span class="countdown-chip">${P.flag} ${P.name.split(' ')[0]} ${currentLang === 'es' ? 'cumpleaños' : 'birthday'}: <b>${txt}</b></span>`;
+      }).join('');
+    }
+
+    /* ================== INTERESTING STATS ================== */
+    function computeInterestingStats(player) {
+      const all = [...GOALS[player], ...(CLUB_GOALS[player] || [])];
+      const byMonth = Array(13).fill(0);
+      const byOpp = {};
+      const byYear = {};
+      let totalGoals = 0;
+      all.forEach(e => {
+        const [y, m] = e[0].split('-').map(Number);
+        byMonth[m] += e[4];
+        byOpp[e[1]] = (byOpp[e[1]] || 0) + e[4];
+        byYear[y] = (byYear[y] || 0) + e[4];
+        totalGoals += e[4];
+      });
+      let bestMonth = 1; for (let i = 1; i <= 12; i++) if (byMonth[i] > byMonth[bestMonth]) bestMonth = i;
+      const bestOpp = Object.entries(byOpp).sort((a, b) => b[1] - a[1])[0];
+      const bestYear = Object.entries(byYear).sort((a, b) => b[1] - a[1])[0];
+      return { bestMonth, bestMonthGoals: byMonth[bestMonth], bestOpp, bestYear, totalGoals };
+    }
+    function renderStatsPanel() {
+      const panel = document.getElementById('statsPanel');
+      panel.innerHTML = Object.keys(PLAYERS).map(p => {
+        const P = PLAYERS[p];
+        const s = computeInterestingStats(p);
+        if (s.totalGoals === 0) return '';
+        return `<h4>${P.flag} ${P.name}</h4>
+    <div class="stat-line">
+      Most goals in a month: <strong>${LOCALE[currentLang].months[s.bestMonth]}</strong> (${s.bestMonthGoals} goals)<br>
+      Favorite opponent: <strong>${s.bestOpp ? s.bestOpp[0] : '—'}</strong> (${s.bestOpp ? s.bestOpp[1] : 0} goals)<br>
+      Most prolific year: <strong>${s.bestYear ? s.bestYear[0] : '—'}</strong> (${s.bestYear ? s.bestYear[1] : 0} goals)<br>
+      Total tracked goals: <strong>${s.totalGoals}</strong>
+    </div>`;
+      }).join('');
+    }
+
+    /* ================== RANDOM HISTORY ================== */
+    function randomDate() {
+      const m = Math.floor(Math.random() * 12) + 1;
+      const d = Math.floor(Math.random() * daysInMonth(m)) + 1;
+      document.getElementById('monthSelect').value = m;
+      fillDaySelect(m);
+      document.getElementById('daySelect').value = d;
+      renderResults(d, m);
+      const _r = document.getElementById('results'); if (_r && _r.scrollIntoView) _r.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /* ================== START ================== */
+    function updateStats() {
+      Object.keys(PLAYERS).forEach(p => {
+        const el = document.getElementById(`c-${p}`);
+        if (el) el.textContent = GOALS[p].length + (CLUB_GOALS[p] ? CLUB_GOALS[p].length : 0);
+      });
+    }
+
+    document.getElementById('playerPicker').addEventListener('click', (e) => {
+      const btn = e.target.closest('.chip');
+      if (!btn) return;
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      currentPlayer = btn.dataset.player;
+      const d = parseInt(document.getElementById('daySelect').value, 10);
+      const m = parseInt(document.getElementById('monthSelect').value, 10);
+      renderResults(d, m);
+    });
+
+    document.getElementById('monthSelect').addEventListener('change', (e) => {
+      fillDaySelect(e.target.value);
+    });
+
+    document.getElementById('findBtn').addEventListener('click', () => {
+      const d = parseInt(document.getElementById('daySelect').value, 10);
+      const m = parseInt(document.getElementById('monthSelect').value, 10);
+      renderResults(d, m);
+    });
+
+    document.getElementById('diceBtn').addEventListener('click', randomDate);
+
+    document.getElementById('cmpA').addEventListener('change', () => renderCompare(curDay, curMonth));
+    document.getElementById('cmpB').addEventListener('change', () => renderCompare(curDay, curMonth));
+
+    document.getElementById('statsToggle').addEventListener('click', () => {
+      const panel = document.getElementById('statsPanel');
+      if (!panel.classList.contains('show')) renderStatsPanel();
+      panel.classList.toggle('show');
+    });
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const body = document.body;
+      const toggle = document.getElementById('themeToggle');
+      if (body.getAttribute('data-theme') === 'light') {
+        body.removeAttribute('data-theme'); toggle.textContent = '🌙';
+      } else {
+        body.setAttribute('data-theme', 'light'); toggle.textContent = '☀️';
+      }
+    });
+    document.getElementById('langSelect').addEventListener('change', (e) => { setLanguage(e.target.value); });
+
+    // initial setup
+    fillDaySelect(6);
+    document.getElementById('monthSelect').value = 6;
+    document.getElementById('daySelect').value = 24;
+    updateStats();
+    initCompareSelects();
+    renderTodayWidget();
+    renderCountdowns();
+    renderResults(24, 6);
+  </script>
+</body>
+
+</html>
+
