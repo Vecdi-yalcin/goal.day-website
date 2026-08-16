@@ -1,6 +1,9 @@
 # Local secrets
 secrets/
 .env
+.env.local
+supabase/local-seed/
+*.seed.json
 
 # Node
 node_modules/
